@@ -113,7 +113,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554.6666666666666,1265.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554.6666666666666,1265.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
