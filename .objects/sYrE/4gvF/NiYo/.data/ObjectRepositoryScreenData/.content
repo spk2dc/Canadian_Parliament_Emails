@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="1cvT713hxUa2T4hCAfHScg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-11, -11, 1942, 1230" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF6SURBVDhPjZPvK0NRGMf359jdCy+IKD/eoGZRZBGGkVq8EMU2ohHGve23zbY083ujbVpYfmyyJoU30s1fs6/OYaV77rW9+NbpeZ4+z3O+5zwqnaARdYIGrDj0eeqg99TTM5unElU6QVOUSUC7XYXF+DiWLybpWZr/VZEApEF0Chx63bUI57aw/+Skk5CYtI5IHsBzGPQ3ISemkf/KwBBopTFp3b+AHlcNMh/nuP9M/UzAq5k6RUC/rwET4Q4cFbw4LvhgDLVhwNfI1MkCSHdr3IjUWxSxlyBC2U3sPfIwn43I+sACBA4LpwacPPupic4bKxzXFphjo5UBiEyRLkTzLvBX81hLTsOdWcLMoZ6pUwBwMIbasXNngz09C1vCBO/tCvWErZUBkDGJibsP67h8P0DiNYJgdoOaWPEViIYDLVhNTlEN+ZuZfFkA6WaJjdEXketcHsCr6SsQaRU+UQkgu0zkP9jTc9RIpV9YWiaFddag21FNJY3/kfgNOwYm49/IiW4AAAAASUVORK5CYII=" Selector="&lt;html app='msedge.exe' title='Current Members of Parliament - Members of Parliament - House of Commons of Canada' /&gt;" Url="https://www.ourcommons.ca/Members/en/search" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="65e19fd5f9386f74a7c66138037d01cf.jpg" xmlns="">02IcZByLHW0ST-WfOLMb4EQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
