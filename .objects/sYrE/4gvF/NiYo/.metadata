@@ -1,13 +1,16 @@
 ﻿{
-  "Name": "Edge Current Members of Parliament - Members ",
+  "Name": "Current Members",
   "Type": "Screen",
   "Id": "NiYoQtUtL0WfUPVTz3EfGw",
   "Reference": "Yg2zSzCLREWtCdGMuMRGVg/NiYoQtUtL0WfUPVTz3EfGw",
   "ParentRef": "Yg2zSzCLREWtCdGMuMRGVg/4gvFmLss6UiFDmp22MS7VA",
   "Created": "2025-08-09T13:26:58.8204738Z",
-  "Updated": "2025-08-09T13:26:58.8204738Z",
+  "Updated": "2025-08-09T13:54:47.2216825Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
   ]
 }
