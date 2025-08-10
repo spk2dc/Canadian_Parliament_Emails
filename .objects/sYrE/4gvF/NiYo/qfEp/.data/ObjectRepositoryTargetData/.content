@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b4TXD_1Do0SjnQaVy6htXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ourcommons.ca/Members/en/constituencies/edmonton-manning(1220)" DesignTimeRectangle="1152, 825, 238, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*@parl.gc.ca' tag='A' /&gt;" Guid="62b54ce6-88ae-4ac4-bb83-c2c877952e13" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edmonton Manning - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="89da8dadde5ba6fd9f2977639b592890.png" xmlns="">0nQm3oV7nI0SCL5qkyiacyw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Telephone",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "BD_HqeTcHkix4iffTEDsUQ",
+  "Reference": "Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ",
+  "ParentRef": "Yg2zSzCLREWtCdGMuMRGVg/NiYoQtUtL0WfUPVTz3EfGw",
+  "Created": "2025-08-10T14:11:50.6335858Z",
+  "Updated": "2025-08-10T14:13:09.8518794Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

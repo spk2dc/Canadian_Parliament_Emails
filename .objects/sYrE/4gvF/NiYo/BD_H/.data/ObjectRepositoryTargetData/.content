@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fd8RrpDd4kWvukyAdVC-sg" Reference="Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="ourcommons.ca/Members/en/constituencies/burnaby-north-seymour(1242)" DesignTimeRectangle="151, 809, 420, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' innertext='                     Telephone:*' /&gt;" Guid="888ff616-d108-495d-b468-33699438509a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Burnaby North—Seymour - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ae4c149f715045ed913775bee32a35a0.png" xmlns="">0mK0_fiDyrU-10-zOvBUWZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
