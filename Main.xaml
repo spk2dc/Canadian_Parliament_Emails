@@ -47,6 +47,7 @@
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -117,26 +118,26 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.6666666666666,4649.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146,7438" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608,4626.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1146,7415.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="574,4384.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="1112,7173.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[table]" DelayBefore="5" DelayBetweenPages="2" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name' ReferenceIdx='0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name Url' ReferenceIdx='1' Name='Name Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Political Affiliation' ReferenceIdx='2' Name='Political Affiliation'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Constituency' ReferenceIdx='3' Name='Constituency'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Constituency Url' ReferenceIdx='4' Name='Constituency Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Province' ReferenceIdx='5' Name='Province'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Name' attr='fulltext' name2='Name Url' attr2='href' /&gt;&lt;column name='Political Affiliation' attr='fulltext' /&gt;&lt;column name='Constituency' attr='fulltext' name2='Constituency Url' attr2='href' /&gt;&lt;column name='Province' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="540,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[table]" DelayBefore="5" DelayBetweenPages="2" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name' ReferenceIdx='0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name Url' ReferenceIdx='1' Name='Name Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Political Affiliation' ReferenceIdx='2' Name='Political Affiliation'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Constituency' ReferenceIdx='3' Name='Constituency'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Constituency Url' ReferenceIdx='4' Name='Constituency Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Province' ReferenceIdx='5' Name='Province'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Name' attr='fulltext' name2='Name Url' attr2='href' /&gt;&lt;column name='Political Affiliation' attr='fulltext' /&gt;&lt;column name='Constituency' attr='fulltext' name2='Constituency Url' attr2='href' /&gt;&lt;column name='Province' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1078,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
               <uix:NExtractData.NextLink>
                 <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/search" DesignTimeRectangle="1640, 664, 87, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' innertext='Next' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' innertext='Next' class='dt-paging-button next' aaname='Next' matching:innertext='fuzzy' fuzzylevel:innertext='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next' /&gt;" Guid="0406c71a-adb5-4a89-8e96-a1594fb5c718" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Current Members of Parliament - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
                   <uix:TargetAnchorable.PointOffset>
@@ -148,10 +149,10 @@
                 <uix:TargetAnchorable BrowserURL="https://www.ourcommons.ca/Members/en/search?view=list" ContentHash="t-CDIbF9pkeVEpjCt8qUMA" DesignTimeRectangle="105, 452, 1710, 2880" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='members-list-view' tag='TABLE' /&gt;" Guid="741078f1-d720-4742-855d-5e642efbfc5e" InformativeScreenshot="b05393807668a3006fa63f223f7c92fa.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/zD7yPzr1p0GOe_dQR14DgQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Current Members of Parliament - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;# of rows: &quot;+table.RowCount.ToString]" />
-            <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Phone" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="540,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
-            <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Email" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="540,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-            <Assign sap:VirtualizedContainerService.HintSize="540,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1078,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;# of rows: &quot;+table.RowCount.ToString]" />
+            <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Phone" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1078,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+            <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Email" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1078,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
+            <Assign sap:VirtualizedContainerService.HintSize="1078,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[testOn]</OutArgument>
               </Assign.To>
@@ -159,7 +160,7 @@
                 <InArgument x:TypeArguments="x:Boolean">True</InArgument>
               </Assign.Value>
             </Assign>
-            <If sap2010:Annotation.AnnotationText="print testing table rows only if in testing mode" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="540,717.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
+            <If sap2010:Annotation.AnnotationText="print testing table rows only if in testing mode" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,717.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -178,7 +179,7 @@
                       <OutArgument x:TypeArguments="sd:DataTable">[testingTable]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Take(10).CopyToDataTable()]</InArgument>
+                      <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Take(11).CopyToDataTable()]</InArgument>
                     </Assign.Value>
                   </Assign>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[&quot;TESTING rows: &quot;+testingTable.RowCount.ToString]" />
@@ -194,15 +195,15 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;--------------------------------------&quot;]" />
-            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="540,2459.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1078,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;--------------------------------------&quot;]" />
+            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,5248" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap2010:Annotation.AnnotationText="testing" DisplayName="Then" sap:VirtualizedContainerService.HintSize="538,2239.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <Sequence sap2010:Annotation.AnnotationText="testing" DisplayName="Then" sap:VirtualizedContainerService.HintSize="1076,2852.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,13 +211,13 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[testingTable]" DisplayName="For Each Row in Testing Table" sap:VirtualizedContainerService.HintSize="504,2010" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[testingTable]" DisplayName="For Each Row in Testing Table" sap:VirtualizedContainerService.HintSize="1042,2623.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Testing loop body" sap:VirtualizedContainerService.HintSize="502,1826" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence DisplayName="Testing loop body" sap:VirtualizedContainerService.HintSize="1040,2439.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="telephone" />
                           </Sequence.Variables>
@@ -225,38 +226,86 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="468,1766" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="1006,2379.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Row #&quot;+testingTable.Rows.IndexOf(CurrentRow).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[CurrentRow(&quot;Name&quot;)]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
-                            <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
-                            <uix:NGetText DelayBefore="1" DisplayName="Get Text 'Telephone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[telephone]" Version="V5">
-                              <uix:NGetText.Target>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Row #&quot;+testingTable.Rows.IndexOf(CurrentRow).ToString]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[CurrentRow(&quot;Name&quot;)]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
+                            <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="972,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
+                            <uix:NCheckState DisplayName="Check App State 'Telephone'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="972,794.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,541.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DelayBefore="1" DisplayName="Get Text 'Telephone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[telephone]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/burnaby-north-seymour(1242)" ContentHash="rqv95DSohkyMFQfAtaCUww" DesignTimeRectangle="151, 809, 420, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' innertext='                     Telephone:*' /&gt;" Guid="888ff616-d108-495d-b468-33699438509a" InformativeScreenshot="ae4c149f715045ed913775bee32a35a0.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Burnaby North—Seymour - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_32" Message="[&quot;No phone number&quot;]" />
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
                                 <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/burnaby-north-seymour(1242)" ContentHash="rqv95DSohkyMFQfAtaCUww" DesignTimeRectangle="151, 809, 420, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' innertext='                     Telephone:*' /&gt;" Guid="888ff616-d108-495d-b468-33699438509a" InformativeScreenshot="ae4c149f715045ed913775bee32a35a0.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Burnaby North—Seymour - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
-                              </uix:NGetText.Target>
-                            </uix:NGetText>
-                            <uix:NGetText DisplayName="Get Text 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[CurrentRow(&quot;Email&quot;)]" Version="V5">
-                              <uix:NGetText.Target>
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                            <uix:NCheckState DisplayName="Check App State 'email'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="972,677.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,424" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Get Text 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[CurrentRow(&quot;Email&quot;)]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/edmonton-manning(1220)" ContentHash="b4TXD_1Do0SjnQaVy6htXg" DesignTimeRectangle="1152, 825, 238, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*@parl.gc.ca' tag='A' /&gt;" Guid="62b54ce6-88ae-4ac4-bb83-c2c877952e13" ImageBase64="" InformativeScreenshot="89da8dadde5ba6fd9f2977639b592890.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/qfEpcf8xFkGYrl7GaU7Jvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edmonton Manning - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_23" Message="[&quot;Email -&gt; &quot;+CurrentRow(&quot;Email&quot;).ToString]" />
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_33" Message="[&quot;No email&quot;]" />
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
                                 <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/edmonton-manning(1220)" ContentHash="b4TXD_1Do0SjnQaVy6htXg" DesignTimeRectangle="1152, 825, 238, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*@parl.gc.ca' tag='A' /&gt;" Guid="62b54ce6-88ae-4ac4-bb83-c2c877952e13" ImageBase64="" InformativeScreenshot="89da8dadde5ba6fd9f2977639b592890.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/qfEpcf8xFkGYrl7GaU7Jvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edmonton Manning - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
-                              </uix:NGetText.Target>
-                            </uix:NGetText>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_23" Message="[&quot;Email -&gt; &quot;+CurrentRow(&quot;Email&quot;).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="LogMessage_24" Message="[&quot;--------------------------------------&quot;]" />
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,170" sap2010:WorkflowViewState.IdRef="LogMessage_24" Message="[&quot;--------------------------------------&quot;]" />
                           </Sequence>
                         </Sequence>
                       </ActivityAction>
@@ -268,11 +317,11 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
-                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[testingTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="504,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="members" StartingCell="A1" WorkbookPath="Test Parliament.xlsx" />
+                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[testingTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="522,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="members" StartingCell="A1" WorkbookPath="Test Parliament.xlsx" />
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,56" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,2231.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -280,13 +329,13 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="504,2010" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="504,2002" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Loop body" sap:VirtualizedContainerService.HintSize="502,1826" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="Loop body" sap:VirtualizedContainerService.HintSize="502,1818" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="telephone" />
                           </Sequence.Variables>
@@ -295,15 +344,15 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="468,1766" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="468,1758" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_26" Message="[&quot;Row #&quot;+table.Rows.IndexOf(CurrentRow).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_27" Message="[CurrentRow(&quot;Name&quot;)]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_28" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_26" Message="[&quot;Row #&quot;+table.Rows.IndexOf(CurrentRow).ToString]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_27" Message="[CurrentRow(&quot;Name&quot;)]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_28" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
                             <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
                             <uix:NGetText DelayBefore="1" DisplayName="Get Text 'Telephone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[telephone]" Version="V5">
                               <uix:NGetText.Target>
