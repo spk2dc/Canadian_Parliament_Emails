@@ -167,7 +167,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If sap2010:Annotation.AnnotationText="if row is 10 or higher delete it. for excel file testing purposes" Condition="[table.Rows.IndexOf(CurrentRow) &gt; 10]" sap:VirtualizedContainerService.HintSize="470,2358" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If sap2010:Annotation.AnnotationText="if row is 10 or higher delete it. for excel file testing purposes" Condition="[table.Rows.IndexOf(CurrentRow) &gt;= 10]" sap:VirtualizedContainerService.HintSize="470,2358" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
