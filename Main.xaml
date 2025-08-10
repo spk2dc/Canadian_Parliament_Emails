@@ -118,19 +118,19 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146,7438" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1216.6666666666665,5262.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1146,7415.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1146,5240" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="1112,7173.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="1112,4998" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -157,7 +157,7 @@
                 <OutArgument x:TypeArguments="x:Boolean">[testOn]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
               </Assign.Value>
             </Assign>
             <If sap2010:Annotation.AnnotationText="print testing table rows only if in testing mode" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,717.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
@@ -196,7 +196,7 @@
               </If.Else>
             </If>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1078,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;--------------------------------------&quot;]" />
-            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,5248" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,3072.6666666666665" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -317,11 +317,11 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
-                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[testingTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="522,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="members" StartingCell="A1" WorkbookPath="Test Parliament.xlsx" />
+                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[testingTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1042,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="members" StartingCell="A1" WorkbookPath="Test Parliament.xlsx" />
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,2231.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="1076,56" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -329,13 +329,13 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="504,2002" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1042,2628.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Loop body" sap:VirtualizedContainerService.HintSize="502,1818" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="Loop body" sap:VirtualizedContainerService.HintSize="1040,2444.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="telephone" />
                           </Sequence.Variables>
@@ -344,37 +344,85 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="468,1758" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Code for 1 row" sap:VirtualizedContainerService.HintSize="1006,2384.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_26" Message="[&quot;Row #&quot;+table.Rows.IndexOf(CurrentRow).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_27" Message="[CurrentRow(&quot;Name&quot;)]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_28" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
-                            <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
-                            <uix:NGetText DelayBefore="1" DisplayName="Get Text 'Telephone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[telephone]" Version="V5">
-                              <uix:NGetText.Target>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_26" Message="[&quot;Row #&quot;+table.Rows.IndexOf(CurrentRow).ToString]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_27" Message="[CurrentRow(&quot;Name&quot;)]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_28" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
+                            <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="972,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
+                            <uix:NCheckState DisplayName="Check App State 'Telephone'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="972,797.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,544" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DelayBefore="1" DisplayName="Get Text 'Telephone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[telephone]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/burnaby-north-seymour(1242)" ContentHash="rqv95DSohkyMFQfAtaCUww" DesignTimeRectangle="151, 809, 420, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' innertext='                     Telephone:*' /&gt;" Guid="888ff616-d108-495d-b468-33699438509a" InformativeScreenshot="ae4c149f715045ed913775bee32a35a0.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Burnaby North—Seymour - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_35" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_34" Message="[&quot;No phone number&quot;]" />
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
                                 <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/burnaby-north-seymour(1242)" ContentHash="rqv95DSohkyMFQfAtaCUww" DesignTimeRectangle="151, 809, 420, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' innertext='                     Telephone:*' /&gt;" Guid="888ff616-d108-495d-b468-33699438509a" InformativeScreenshot="ae4c149f715045ed913775bee32a35a0.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/BD_HqeTcHkix4iffTEDsUQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Burnaby North—Seymour - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete" />
-                              </uix:NGetText.Target>
-                            </uix:NGetText>
-                            <uix:NGetText DisplayName="Get Text 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[CurrentRow(&quot;Email&quot;)]" Version="V5">
-                              <uix:NGetText.Target>
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                            <uix:NCheckState DisplayName="Check App State 'email'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="972,680" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V5">
+                              <uix:NCheckState.IfExists>
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,426.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText DisplayName="Get Text 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="df9d4998-bf20-49fa-b4d8-5540f6fd3276" TextString="[CurrentRow(&quot;Email&quot;)]" Version="V5">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/edmonton-manning(1220)" ContentHash="b4TXD_1Do0SjnQaVy6htXg" DesignTimeRectangle="1152, 825, 238, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*@parl.gc.ca' tag='A' /&gt;" Guid="62b54ce6-88ae-4ac4-bb83-c2c877952e13" ImageBase64="" InformativeScreenshot="89da8dadde5ba6fd9f2977639b592890.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/qfEpcf8xFkGYrl7GaU7Jvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edmonton Manning - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_37" Message="[&quot;Email -&gt; &quot;+CurrentRow(&quot;Email&quot;).ToString]" />
+                                </Sequence>
+                              </uix:NCheckState.IfExists>
+                              <uix:NCheckState.IfNotExists>
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_36" Message="[&quot;No email&quot;]" />
+                                </Sequence>
+                              </uix:NCheckState.IfNotExists>
+                              <uix:NCheckState.Target>
                                 <uix:TargetAnchorable BrowserURL="ourcommons.ca/Members/en/constituencies/edmonton-manning(1220)" ContentHash="b4TXD_1Do0SjnQaVy6htXg" DesignTimeRectangle="1152, 825, 238, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='*@parl.gc.ca' tag='A' /&gt;" Guid="62b54ce6-88ae-4ac4-bb83-c2c877952e13" ImageBase64="" InformativeScreenshot="89da8dadde5ba6fd9f2977639b592890.png" Reference="Yg2zSzCLREWtCdGMuMRGVg/qfEpcf8xFkGYrl7GaU7Jvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edmonton Manning - Constituencies - Members of Parliament - House of Commons of Canada' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
-                              </uix:NGetText.Target>
-                            </uix:NGetText>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_30" Message="[&quot;Email -&gt; &quot;+CurrentRow(&quot;Email&quot;).ToString]" />
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;--------------------------------------&quot;]" />
+                              </uix:NCheckState.Target>
+                            </uix:NCheckState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,170" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;--------------------------------------&quot;]" />
                           </Sequence>
                         </Sequence>
                       </ActivityAction>
@@ -386,7 +434,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
-                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[table]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="504,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="members" StartingCell="A1" WorkbookPath="Canadian Parliament.xlsx" />
+                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[table]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1042,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="members" StartingCell="A1" WorkbookPath="Canadian Parliament.xlsx" />
                 </Sequence>
               </If.Else>
             </If>
