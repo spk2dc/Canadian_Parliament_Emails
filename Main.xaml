@@ -117,19 +117,19 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.6666666666666,6252.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.6666666666666,4649.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608,6230" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608,4626.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="574,5988" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="574,4384.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,18 +151,51 @@
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;# of rows: &quot;+table.RowCount.ToString]" />
             <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Phone" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="540,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
             <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Email" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="540,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-            <ui:Comment sap:VirtualizedContainerService.HintSize="540,108.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="if row is 10 or higher delete it. for excel file testing purposes" />
-            <Assign sap:VirtualizedContainerService.HintSize="540,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign sap:VirtualizedContainerService.HintSize="540,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
-                <OutArgument x:TypeArguments="sd:DataTable">[testingTable]</OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean">[testOn]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Take(10).CopyToDataTable()]</InArgument>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[&quot;Testing table rows: &quot;+testingTable.RowCount.ToString]" />
+            <If sap2010:Annotation.AnnotationText="print testing table rows only if in testing mode" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="540,717.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,456" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Comment sap:VirtualizedContainerService.HintSize="434,108.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="if row is 10 or higher delete it. for excel file testing purposes" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="sd:DataTable">[testingTable]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Take(10).CopyToDataTable()]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[&quot;TESTING rows: &quot;+testingTable.RowCount.ToString]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;--------------------------------------&quot;]" />
-            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="True" sap:VirtualizedContainerService.HintSize="540,4492" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap2010:Annotation.AnnotationText="set condition to True for testing" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="540,2459.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -174,6 +207,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[testingTable]" DisplayName="For Each Row in Testing Table" sap:VirtualizedContainerService.HintSize="504,2010" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
@@ -195,6 +229,7 @@
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Row #&quot;+testingTable.Rows.IndexOf(CurrentRow).ToString]" />
@@ -216,7 +251,7 @@
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Object">[Split(Split(telephone, "Fax")(0),":")(1).Replace("\n", " ").Trim]</InArgument>
+                                <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
                               </Assign.Value>
                             </Assign>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
@@ -237,15 +272,15 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,2091.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence sap2010:Annotation.AnnotationText="production" DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,56" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="504,2000.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[table]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="504,2010" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
@@ -285,7 +320,7 @@
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Phone")]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Object">[Split(Split(telephone, "Fax")(0),":")(1).Replace("\n", " ").Trim]</InArgument>
+                                <InArgument x:TypeArguments="x:Object">[Split(telephone, " ")(2).Replace("\n", " ").Trim]</InArgument>
                               </Assign.Value>
                             </Assign>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[telephone+Environment.NewLine+&quot; -&gt; &quot;+CurrentRow(&quot;Phone&quot;).ToString]" />
@@ -302,6 +337,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
+                  <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[table]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="504,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="members" StartingCell="A1" WorkbookPath="Canadian Parliament.xlsx" />
                 </Sequence>
               </If.Else>
             </If>
