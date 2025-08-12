@@ -195,7 +195,7 @@
                       <OutArgument x:TypeArguments="sd:DataTable">[testingTable]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Skip(11).Take(5).CopyToDataTable]</InArgument>
+                      <InArgument x:TypeArguments="sd:DataTable">[table.AsEnumerable().Skip(12).Take(3).CopyToDataTable]</InArgument>
                     </Assign.Value>
                   </Assign>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[&quot;TESTING rows: &quot;+testingTable.RowCount.ToString]" />
@@ -249,7 +249,7 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Row #&quot;+testingTable.Rows.IndexOf(CurrentRow).ToString+&quot; skipped 11 rows&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Row #&quot;+testingTable.Rows.IndexOf(CurrentRow).ToString+&quot; skipped 12 rows&quot;]" />
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[CurrentRow(&quot;Name&quot;)]" />
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[CurrentRow(&quot;Constituency Url&quot;)]" />
                             <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="972,116.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[CurrentRow(&quot;Constituency Url&quot;).ToString]" Version="V5" />
