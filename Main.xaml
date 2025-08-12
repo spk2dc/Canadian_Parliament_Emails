@@ -45,9 +45,9 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -118,19 +118,19 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146,5268" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1146,5461.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1146,5245.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Members of Parliament" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1146,5438.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="df9d4998-bf20-49fa-b4d8-5540f6fd3276" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="1112,5003.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Browser Do" sap:VirtualizedContainerService.HintSize="1112,5196.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -152,14 +152,30 @@
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1078,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;# of rows: &quot;+table.RowCount.ToString]" />
             <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Phone" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1078,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
             <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Email" DataTable="[table]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1078,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-            <Assign sap:VirtualizedContainerService.HintSize="1078,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Boolean">[testOn]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-              </Assign.Value>
-            </Assign>
+            <ui:CommentOut sap2010:Annotation.AnnotationText="assigned with a default value in the variable menu now" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1078,310.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">[testOn]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <If sap2010:Annotation.AnnotationText="print testing table rows only if in testing mode" Condition="[testOn]" sap:VirtualizedContainerService.HintSize="1078,717.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
